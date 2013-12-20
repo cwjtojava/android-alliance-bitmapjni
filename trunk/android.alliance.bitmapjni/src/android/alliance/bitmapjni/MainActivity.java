@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		// Kopiere ein Bild auf die SD-Karte
+		// Kopiere das Bild aus dem Assets-Ordner auf die SD-Karte ins root
 		
 		bitmap = BitmapFactory.decodeFile(Environment.getExternalStorageDirectory().getAbsolutePath() + "/bitmap_jni_test.png");
 		
