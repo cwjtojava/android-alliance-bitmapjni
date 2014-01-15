@@ -2,6 +2,8 @@ package android.alliance.bitmapjni;
 
 /**
  * Copy the jni_test.bmp from the assets folder to the sdcard of your device.
+ * 
+ * On the cheesecake-test it will be fail
  */
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -40,6 +42,7 @@ public class ExampleMainActivity extends Activity {
 		setContentView(R.layout.main);
 		
 		bitmapFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/jni_test.png");
+//		bitmapFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/jni_test_kaesekuchen.png");
 		
 		bitmap = BitmapFactory.decodeFile(bitmapFile.getAbsolutePath());
 		
